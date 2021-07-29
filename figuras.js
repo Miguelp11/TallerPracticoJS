@@ -1,4 +1,4 @@
-// Codigo del cuadrado
+// CODIGO DEL CUADRADO
 console.group("cuadrado");
 
 // Perimetro cuadrado
@@ -13,7 +13,7 @@ function areaCuadrado(lado){
 
 console.groupEnd();
 
-// Codigo del triangulo
+// CODIGO DEL TRIANGULO
 console.group("tringulo");
 
 // Perimetro triangulo
@@ -28,7 +28,7 @@ function areaTriangulo(base, altura){
 
 console.groupEnd();
 
-// Codigo del circulo
+// CODIGO DEL CIRCULO
 console.group("circulo");
 const pi = Math.PI;
 
@@ -49,3 +49,70 @@ function areaCirculo(radio){
 }
 
 console.groupEnd();
+
+// Interaccion con HTML
+const botonCuadrdado= document.getElementById("botonCuadrado");
+const botonTriangulo = document.getElementById('botonTriangulo');
+const botonCirculo = document.getElementById('botonCirculo');
+
+botonCuadrdado.addEventListener('click', function(){
+    const input = document.getElementById("cuadrado").value;
+    if (input == ""){
+        alert("Ningun campo del Cuadrado debe quedar vacio");
+    }else{
+        // function calcularCuadrado(){         
+            const resultadoA= document.getElementsByClassName('resultado')[0];
+            const resultadoP= document.getElementsByClassName('resultado1')[0];
+        
+            const area= areaCuadrado(input);
+            const perimetro = perimetroCuadrado(input);
+            
+            resultadoA.innerText= area + " cm^2";
+            resultadoP.innerText  = perimetro + " cm";
+        // }
+    }
+});
+
+botonTriangulo.addEventListener('click', function(){
+    const lado1 = parseInt(document.getElementById("trianguloLado1").value);
+    const lado2 = parseInt(document.getElementById("trianguloLado2").value);
+    const base = parseInt(document.getElementById("trianguloBase").value);
+    const altura = parseInt(document.getElementById("trianguloAltura").value);
+
+    if(isNaN(lado1) || isNaN(lado2) || isNaN(base) || isNaN(altura)){
+        alert("Ningun campo del Triángulo debe quedar vacio");
+    }else{
+        // function calcularTriangulo(){
+            const resultadoA= document.getElementsByClassName('resultado')[1];
+            const resultadoP= document.getElementsByClassName('resultado1')[1];
+        
+            const area = areaTriangulo(base, altura);
+            const perimetro = perimetroTriangulo(lado1,lado2,base);
+        
+            resultadoA.innerText= area+ " cm^2";
+            resultadoP.innerText= perimetro+" cm";
+        // }
+    }
+});
+
+botonCirculo.addEventListener('click', function(){
+    const radio= document.getElementById('circuloRadio').value;
+
+    if(radio==""){
+        alert("Ningun campo del Círculo debe quedar vacio");
+    }else{
+        // function calcularCirculo(){
+            const resultadoD= document.getElementsByClassName('resultado')[2];
+            const resultadoC= document.getElementsByClassName('resultado1')[2];
+            const resultadoA= document.getElementsByClassName('resultado2')[0];
+        
+            const diametro= diametroCirculo(radio);
+            const circun= circunferencia(radio).toFixed(5);
+            const area = areaCirculo(radio).toFixed(5);
+        
+            resultadoD.innerText= diametro+" cm";
+            resultadoC.innerText= circun+ " cm";
+            resultadoA.innerText= area+" cm^2";        
+        // }
+    }
+});

@@ -4,10 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ponce">
     <title>Figuras geométricas | Curso Practico de JS</title>
+    <link rel="stylesheet" href="figuras.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Figuras Geométricas</h1>
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p>Taller curso práctico de JS</p>
+        <img src="img/logo.png" alt="figuras">
+    </header>
+    <section class="cuadrado">
+        <h2>Cuadrado</h2>
+        <div class="contenedor">
+            <article class="valores">
+                <h3>Valores</h3>
+                <form action="">
+                    <label for="cuadrado">Ingresa los valores</label>
+                    <input id="cuadrado" type="number" placeholder="Lado" >
+                    <button type="button" id="botonCuadrado">Calcular</button>
+                </form>
+            </article>
+            <div class="linea"></div>
+            <article class="resultados">
+                <h3>Resultados</h3>
+                <p>El área del Cuadrado es:</p>
+                <p class="resultado"></p>
+                <p>El perímetro del Cuadrado es:</p>
+                <p class="resultado1"></p>
+            </article>
+        </div>
+    </section>
+    <section class="triangulo">
+        <h2>Triángulo</h2>
+        <div class="contenedor">
+            <article class="valores">
+                <h3>Valores</h3>
+                <form action="">
+                    <label >Ingresa los valores</label>
+                    <input id="trianguloLado1" type="number" placeholder="Lado 1" >
+                    <input id="trianguloLado2" type="number" placeholder="Lado 2" >
+                    <input id="trianguloBase" type="number" placeholder="Base" >
+                    <input id="trianguloAltura" type="number" placeholder="Altura" >
+                    <button type="button" id="botonTriangulo">Calcular</button>
+                </form>
+            </article>
+            <div class="linea"></div>
+            <article class="resultados">
+                <h3>Resultados</h3>
+                <p>El área del Triángulo es:</p>
+                <p class="resultado"></p>
+                <p>El perímetro del Triángulo es:</p>
+                <p class="resultado1"></p>
+            </article>
+        </div>
+    </section>
+    <section class="circulo">
+        <h2>Circulo</h2>
+        <div class="contenedor">
+            <article class="valores">
+                <h3>Valores</h3>
+                <form action="">
+                    <label for="circuloRadio">Ingresa los valores</label>
+                    <input id="circuloRadio" type="number" placeholder="Radio">
+                    <button type="button" id="botonCirculo">Calcular</button>
+                </form>
+            </article>
+            <div class="linea"></div>
+            <article class="resultados">
+                <h3>Resultados</h3>
+                <p>El diámetro del Círculo es:</p>
+                <p class="resultado"></p>
+                <p>La circunferencia del Círculo es:</p>
+                <p class="resultado1"></p>
+                <p>El área del Círculo es:</p>
+                <p class="resultado2"></p>
+            </article>
+        </div>
+    </section>
+    <!-- <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div> -->
+    <footer>
+        <p>Desarrollado por <span>Miguel Ponce</span> 2021</p>
+    </footer>
     <script src="figuras.js"></script>
 </body>
 </html>
