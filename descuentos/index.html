@@ -9,8 +9,21 @@
 <body>
     <header>
         <h1>Porcentajes y descuentos</h1>
-        
+        <p>Segundo taller del Curso Practico de JS</p>
     </header>
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+        <form action="">
+            <label for="precio">Escribe el precio de tu producto</label>
+            <input type="number" name="" id="precio">
+            <label for="descuento">Escribe el descuento de tu producto</label>
+            <input type="number" name="" id="descuento">
+            <label for="cupon">Tienes un cupon?</label>
+            <input type="text" name="" id="cupon">
+            <button type="button" onclick="calcularPrecio()">Calcular</button>
+            <p id="resultado"></p>
+        </form>
+    </section>
     <script src="../js/descuentos.js"></script>
 </body>
 </html>
