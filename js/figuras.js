@@ -1,3 +1,10 @@
+//menu
+const menuBurguer = document.getElementById("menuHamburguesa");
+const menu = document.getElementById("menu");
+menuBurguer.addEventListener('click', ()=>{ 
+    menu.classList.toggle('desplegar-menu');
+});
+
 // CODIGO DEL CUADRADO
 console.group("cuadrado");
 
@@ -67,7 +74,7 @@ botonCuadrdado.addEventListener('click', function(){
             const area= areaCuadrado(input);
             const perimetro = perimetroCuadrado(input);
             
-            resultadoA.innerText= area + " cm^2";
+            resultadoA.innerHTML= area+" cm"+"<sup>2"+"</sup>";
             resultadoP.innerText  = perimetro + " cm";
         // }
     }
@@ -89,7 +96,7 @@ botonTriangulo.addEventListener('click', function(){
             const area = areaTriangulo(base, altura);
             const perimetro = perimetroTriangulo(lado1,lado2,base);
         
-            resultadoA.innerText= area+ " cm^2";
+            resultadoA.innerHTML= area+" cm"+"<sup>2"+"</sup>";
             resultadoP.innerText= perimetro+" cm";
         // }
     }
@@ -112,7 +119,7 @@ botonCirculo.addEventListener('click', function(){
         
             resultadoD.innerText= diametro+" cm";
             resultadoC.innerText= circun+ " cm";
-            resultadoA.innerText= area+" cm^2";        
+            resultadoA.innerHTML= area+" cm"+"<sup>2"+"</sup>";        
         // }
     }
 });

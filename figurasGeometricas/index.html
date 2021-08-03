@@ -6,15 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Miguel Ponce">
     <title>Figuras geométricas | Curso Practico de JS</title>
-    <link rel="stylesheet" href="css/figuras.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/figuras.css">
 </head>
 <body>
     <header>
-        <h1>Figuras Geométricas</h1>
-        <p>Taller curso práctico de JS</p>
-        <img src="img/logo.png" alt="figuras">
+        <nav>
+            <div class="contenedor-menuLogo">
+                <div class="menuHamburguesa" id="menuHamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div>
+                    <img src="../img/logo.png" alt="figuras-geometricas">
+                    <h1>Figuras Geométricas</h1>
+                </div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="/">Inicio</a></li>
+                <li class="activo"><a href="../figurasGeometricas/index.html">Figuras</a></li>
+                <li><a href="../descuentos/index.html">Descuentos</a></li>
+                <li><a href="../modaMediaMediana/index.html">Moda/Mediana/Media</a></li>
+                <li><a href="">Salario</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="cuadrado">
         <h2>Cuadrado</h2>
@@ -22,7 +38,7 @@
             <article class="valores">
                 <h3>Valores</h3>
                 <form action="">
-                    <label for="cuadrado">Ingresa los valores</label>
+                    <label for="cuadrado">Ingresa los valores (cm)</label>
                     <input id="cuadrado" type="number" placeholder="Lado" >
                     <button type="button" id="botonCuadrado">Calcular</button>
                 </form>
@@ -43,7 +59,7 @@
             <article class="valores">
                 <h3>Valores</h3>
                 <form action="">
-                    <label >Ingresa los valores</label>
+                    <label >Ingresa los valores (cm)</label>
                     <input id="trianguloLado1" type="number" placeholder="Lado 1" >
                     <input id="trianguloLado2" type="number" placeholder="Lado 2" >
                     <input id="trianguloBase" type="number" placeholder="Base" >
@@ -67,7 +83,7 @@
             <article class="valores">
                 <h3>Valores</h3>
                 <form action="">
-                    <label for="circuloRadio">Ingresa los valores</label>
+                    <label for="circuloRadio">Ingresa los valores (cm)</label>
                     <input id="circuloRadio" type="number" placeholder="Radio">
                     <button type="button" id="botonCirculo">Calcular</button>
                 </form>
@@ -88,6 +104,6 @@
     <footer>
         <p>Desarrollado por <span>Miguel Ponce</span> 2021</p>
     </footer>
-    <script src="js/figuras.js"></script>
+    <script src="../js/figuras.js"></script>
 </body>
 </html>
