@@ -37,8 +37,8 @@ header img{
 nav ul li{
     border-bottom: 1px solid #fff;
     padding: 5px 0;
-    transition: all .4s linear;
     list-style: none;
+    transition: all .4s linear;
 }
 nav ul li:hover{
     background-color: #001E6C;
@@ -190,16 +190,21 @@ footer span{
     }
     nav ul li{
         border-bottom: none;
+        margin-right: 2px;
     }
     nav ul li:hover{
-        border-left: 1px solid #4783FE;
-        border-right: 1px solid #4783FE;
+        background-color: transparent;
+        border-bottom: 5px solid #001E6C;
     }
     nav ul li a{
         display: inline-block;
         width: auto;
         height: 39px;
         padding: 10px 10px;
+    }
+    .activo{
+        background-color: transparent;
+        border-bottom: 5px solid #001E6C;
     }
     .menu{
         max-height: 116px;
