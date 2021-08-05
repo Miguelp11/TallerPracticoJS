@@ -130,10 +130,17 @@ button:hover{
 details{
     margin-top: 10px;
     cursor: pointer;
+    width: 200px;
 }
 details ul{
     margin-top: 5px;
     margin-left: 40px;
+}
+details ul li{
+    list-style: circle;
+}
+summary::marker{
+    color: #001E6C;
 }
 /* PIE DE PAGINA */
 footer{
