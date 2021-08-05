@@ -4,26 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ponce">
     <title>Porcentajes y descuentos | Taller de JS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/favicon2.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/descuentos.css">
 </head>
 <body>
     <header>
-        <h1>Porcentajes y descuentos</h1>
-        <p>Segundo taller del Curso Practico de JS</p>
+        <nav>
+            <div class="contenedor-menuLogo">
+                <div class="menuHamburguesa" id="menuHamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div>
+                    <img src="../img/descuento.png" alt="figuras-geometricas">
+                    <h1>Descuentos</h1>
+                </div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="../">Inicio</a></li>
+                <li><a href="../figurasGeometricas/">Figuras</a></li>
+                <li class="activo"><a href="../descuentos/">Descuentos</a></li>
+                <li><a href="../modaMediaMediana/">Moda/Mediana/Media</a></li>
+                <li><a href="">Salario</a></li>
+            </ul>
+        </nav>
     </header>
     <section>
-        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-        <form action="">
-            <label for="precio">Escribe el precio de tu producto</label>
-            <input type="number" name="" id="precio">
-            <label for="descuento">Escribe el descuento de tu producto</label>
-            <input type="number" name="" id="descuento">
-            <label for="cupon">Tienes un cupon?</label>
-            <input type="text" name="" id="cupon">
-            <button type="button" onclick="calcularPrecio()">Calcular</button>
-            <p id="resultado"></p>
-        </form>
+        <div class="contenedor">
+            <h2>Calculadora de precios con descuentos</h2>
+            <form action="">
+                <label for="precio">Escribe el precio de tu producto sin el signo ($)</label>
+                <input type="number" name="" id="precio" placeholder="Ejemplo $100">
+                <label for="descuento">Escribe el descuento de tu producto sin el signo (%)</label>
+                <input type="number" name="" id="descuento" placeholder="Ejemplo 15%">
+                <label for="cupon">¿Tienes un cupon?</label>
+                <input type="text" name="" id="cupon" placeholder="hotsale">
+                <button type="button" onclick="calcularPrecio()">Calcular</button>
+                <h3>El precio final de tu producto es:</h3>
+                <p class="resultado" id="resultado"></p>
+            </form>
+        </div>
+        <details>
+            <summary>¿Qué cupones hay?</summary>
+            <ul>
+                <li>BIENVENIDO</li>
+                <li>HOTSALE</li>
+                <li>PLATZI</li>
+            </ul>
+        </details>
     </section>
+    <footer>
+        <p>Desarrollado por <span>Miguel Ponce</span> 2021</p>
+    </footer>
     <script src="../js/descuentos.js"></script>
 </body>
 </html>

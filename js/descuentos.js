@@ -1,3 +1,10 @@
+//menu
+const menuBurguer = document.getElementById("menuHamburguesa");
+const menu = document.getElementById("menu");
+menuBurguer.addEventListener('click', ()=>{ 
+    menu.classList.toggle('desplegar-menu');
+});
+
 function calcularDescuento(precio, descuento){
     const porcentacePrecioConDescuento = 100 - descuento;
     const precioConDescuento= (precio * porcentacePrecioConDescuento)/100;
@@ -26,19 +33,19 @@ function calcularPrecio(){
             descuento += cuponValor; 
             precioDescuento = calcularDescuento(precio, descuento);
             resultado.innerText= "$ "+precioDescuento; 
-            alert("Tu cupon es del 5%");   
+            alert(`Tu cupon ${cupones[0]} te da un extra del 5%`);   
         } else if (cupon === cupones[1]){
             cuponValor= 15;
             descuento += cuponValor;
             precioDescuento = calcularDescuento(precio, descuento);
             resultado.innerText= "$ "+precioDescuento; 
-            alert("Tu cupon es del 15%");   
+            alert(`Tu cupon ${cupones[1]} te da un extra del 15%`);    
         } else if (cupon == cupones[2]){
             cuponValor= 25;
             descuento += cuponValor;
             precioDescuento = calcularDescuento(precio, descuento);
             resultado.innerText= "$ "+precioDescuento; 
-            alert("Tu cupon es del 25%");   
+            alert(`Tu cupon ${cupones[2]} te da un extra del 25%`);    
         }else{
             alert(`El cupon ${cupon} NO es valido`);
         }
