@@ -1,65 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F0F7F7;
-}
-header{
-    background-color: #035397;
-    text-align: center;
-    color: #fff;
-    padding-top: 10px;
-}
-header h1{
-    font-size: 24px;
-    text-transform: uppercase;
-    display: none;
-}
-header img{
-    width: 45px;
-}
-.contenedor-menuLogo{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 15px;
-}
-.menuHamburguesa .fa-bars{
-    font-size: 30px;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 5px;
-    color: #fff;
-    cursor: pointer;
-}
-nav ul li{
-    border-bottom: 1px solid #fff;
-    padding: 5px 0;
-    list-style: none;
-    transition: all .4s linear;
-}
-nav ul li:hover{
-    background-color: #001E6C;
-}
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    width: 155px;
-}
-.menu{
-    margin-top: 5px;
-    max-height: 0;
-    overflow: hidden;
-    transition: all .4s linear;
-}
-.desplegar-menu{
-    max-height: 140px;
-}
-.activo{
-    background-color: #001E6C;
-}
+/* CONTENIDO */
 section h2{
     text-align: center;
     margin-top: 20px;
@@ -150,16 +89,6 @@ button{
 }
 button:hover{
     background-color: #001E6C;
-}
-footer{
-    background-color: #4783FE;
-    padding: 20px 0;
-    text-align: center;
-    color: #fff;
-}
-footer span{
-    color: #001E6C;
-    font-weight: bold;
 }
 /* RESPONSIVO */
 @media screen and (min-width:480px) {
