@@ -224,7 +224,7 @@ footer span{
     }
     .cuadrado, .triangulo, .circulo{
         max-width: 1000px;
-        height: 290px;
+        /* height: 290px; */
     }
     .contenedor{
         height: 230px;
