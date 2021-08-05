@@ -9,19 +9,24 @@ const boton = document.getElementById("boton");
 
 boton.addEventListener("click", ()=>{
     const numeros= document.getElementById("listaNumeros").value;
-    const listaNumeros = numeros.split(",");
-    const listaNumeros1 = listaNumeros.map(Number);
-    const resultadoPromedio= document.getElementsByClassName('resultado')[0];
-    const resultadoMediana= document.getElementsByClassName('resultado1')[0];
-    const resultadoModa= document.getElementsByClassName('resultado2')[0];
-    
-    const promedio = calcularPromedio(listaNumeros1);
-    const mediana = calcularMediana(listaNumeros1);
-    const moda = calcularModa(listaNumeros1);
-    
-    resultadoPromedio.innerText = promedio;
-    resultadoMediana.innerText = mediana;
-    resultadoModa.innerText = moda[0] + ", " + moda[1]+" repeticiones";
+
+    if(numeros == ""){
+        alert("El campo de los valores no debe quedar vacio");
+    } else{
+        const listaNumeros = numeros.split(",");
+        const listaNumeros1 = listaNumeros.map(Number);
+        const resultadoPromedio= document.getElementsByClassName('resultado')[0];
+        const resultadoMediana= document.getElementsByClassName('resultado1')[0];
+        const resultadoModa= document.getElementsByClassName('resultado2')[0];
+        
+        const promedio = calcularPromedio(listaNumeros1).toFixed(5);
+        const mediana = calcularMediana(listaNumeros1);
+        const moda = calcularModa(listaNumeros1);
+        
+        resultadoPromedio.innerText = promedio;
+        resultadoMediana.innerText = mediana;
+        resultadoModa.innerText = moda[0] + ", " + moda[1]+" repeticiones";
+    }
 });
 
 // CALCULAR PROMEDIO
