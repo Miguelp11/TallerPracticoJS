@@ -1,0 +1,232 @@
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0F7F7;
+}
+img{
+    max-width: 100%;
+}
+/* BARRA DE NAVEGACION */
+header{
+    background-color: #035397;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+header h1{
+    font-size: 24px;
+    text-transform: uppercase;
+    display: none;
+}
+header img{
+    width: 45px;
+}
+.contenedor-menuLogo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.menuHamburguesa .fa-bars{
+    font-size: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+nav ul li{
+    border-bottom: 1px solid #fff;
+    padding: 5px 0;
+    list-style: none;
+    transition: all .4s linear;
+}
+nav ul li:hover{
+    background-color: #001E6C;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    width: 155px;
+}
+.menu{
+    margin-top: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s linear;
+}
+.desplegar-menu{
+    max-height: 140px;
+}
+.activo{
+    background-color: #001E6C;
+}
+/* CONTENIDO */
+section{
+    width: 80%;
+    margin: 10px auto;
+}
+.contenedor{
+    background-color: #fff;
+    margin: 25px auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+article h3{
+    margin: 10px 0;
+    font-size: 16px;
+}
+article p{
+    text-align: justify;
+    font-size: 14px;
+}
+article p a{
+    text-decoration: none;
+    color:  #001E6C;
+    font-weight: bold;
+}
+.cita{
+    font-style: italic;
+    font-weight: 100;
+}
+article:nth-child(1){
+    border-bottom: 2px solid #001E6C;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    margin: 5px 0;
+    font-size: 14px;
+}
+input{
+    height: 25px;
+    width: 180px;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #001E6C;
+    font-weight: bold;
+    font-size: 15px;
+}
+.resultado, .resultado1, .resultado2{
+    width: 150px;
+    height: 25px;
+    border-bottom: 2px dashed #001E6C;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+}
+button{
+    background-color: #4783FE;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background-color .3s linear;
+}
+button:hover{
+    background-color: #001E6C;
+}
+.resultados p{
+    text-align: center;
+    margin-top: 10px;
+}
+.resultados h3{
+    margin: 20px 0;
+    color: #001E6C;
+}
+/* PIE DE PAGINA */
+footer{
+    background-color: #4783FE;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+footer span{
+    color: #001E6C;
+    font-weight: bold;
+}
+/* RESPONSIVO */
+@media screen and (min-width:768px) {
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+    }
+    article:nth-child(1){
+        border-bottom: none;
+        width: 60%;
+        padding-right: 10px;
+    }
+   
+    .linea{
+        width: 2px;
+        height: auto;
+        background-color: #001E6C;
+    }
+}
+@media screen and (min-width:1024px) {
+    header h1{
+        display: inline-block;
+        font-size: 32px;
+        vertical-align: top;
+        margin-top: 5px;
+    }
+    .menuHamburguesa{
+        display: none;
+    }
+    nav ul li{
+        border-bottom: none;
+        margin-right: 2px;
+    }
+    nav ul li:hover{
+        background-color: transparent;
+        border-bottom: 5px solid #001E6C;
+    }
+    nav ul li a{
+        display: inline-block;
+        width: auto;
+        height: 39px;
+        padding: 10px 10px;
+    }
+    .activo{
+        background-color: transparent;
+        border-bottom: 5px solid #001E6C;
+    }
+    .menu{
+        max-height: 116px;
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+    .contenedor{
+        margin-top: 40px;
+    }
+    article h3{
+        font-size: 18px;
+    }
+    article p{
+        font-size: 16px;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

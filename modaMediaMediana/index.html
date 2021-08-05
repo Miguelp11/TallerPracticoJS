@@ -4,12 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ponce">
     <title>Moda, Media y Mediana | Taller de JS</title>
+    <link rel="shortcut icon" href="../img/favicon4.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon4.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/moda.css">
 </head>
 <body>
     <header>
-        <h1>Promedio</h1>
+        <nav>
+            <div class="contenedor-menuLogo">
+                <div class="menuHamburguesa" id="menuHamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div>
+                    <img src="../img/grafica.png" alt="figuras-geometricas">
+                    <h1>Moda, Media y Mediana</h1>
+                </div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="../">Inicio</a></li>
+                <li><a href="../figurasGeometricas/">Figuras</a></li>
+                <li><a href="../descuentos/">Descuentos</a></li>
+                <li class="activo"><a href="../modaMediaMediana/">Moda/Mediana/Media</a></li>
+                <li><a href="">Salario</a></li>
+            </ul>
+        </nav>
     </header>
+    <section>
+        <div class="contenedor">
+            <article>
+                <h3>Media | Media aritmética | Promedio</h3>
+                <p>La <strong>media</strong> es el valor que se obtiene al sumar todos los datos y dividir el resultado entre la cantidad de datos. <br>
+                La fórmula es la siguiente:</p>
+                <img src="../img/media.jpg" alt="formula-promedio">
+                <h3>Mediana</h3>
+                <p>La <strong>mediana</strong> es el valor que ocupa la posición central cuando todos los datos están ordenados en orden creciente o decreciente.
+                <br>
+                La mediana se representa con las letras: <strong>M<sub>e</sub></strong>.</p>
+                <h3>Moda</h3>
+                <p>La <strong>moda</strong> es el valor que más se repite. También podemos decir que la moda es el valor con mayor frecuencia absoluta o el valor que ocurre con más frecuencia. 
+                <br>
+                La moda se representa con las letras: <strong>M<sub>o</sub></strong>.</p><br>
+                <p class="cita">Información tomada de <cite><a href="https://matemovil.com/media-mediana-y-moda-ejemplos-y-ejercicios/" target="_blank">matemovil</a></cite>.</p>
+            </article>
+            <div class="linea"></div>
+            <article>
+                <h3>Calcular Moda, Media y Mediana</h3>
+                <form action="">
+                    <label for="listaNumeros">Ingresa los valores separados por una coma ","</label>
+                    <input id="listaNumeros" type="text" placeholder="10,6,10,10,5,7, etc">
+                    <button type="button" id="boton">Calcular</button>
+                </form>
+                <div class="resultados">
+                    <h3>Resultados</h3>
+                    <p>El Promedio o Media es:</p>
+                    <p class="resultado"></p>
+                    <p>La Mediana es:</p>
+                    <p class="resultado1"></p>
+                    <p>La moda es:</p>
+                    <p class="resultado2"></p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <p>Desarrollado por <span>Miguel Ponce</span> 2021</p>
+    </footer>
     <script src="../js/modaMediaMediana.js"></script>
 </body>
 </html>
