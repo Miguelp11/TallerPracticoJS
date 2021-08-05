@@ -4,24 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ponce">
     <title>Taller Práctico de JS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="figurasGeometricas/index.html">Figuras</a></li>
-                <li><a href="descuentos/index.html">Descuentos</a></li>
-                <li><a href="modaMediaMediana/index.html">Moda/Mediana/Media</a></li>
+            <div class="contenedor-menuLogo">
+                <div class="menuHamburguesa" id="menuHamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div>
+                    <img src="../img/taller.png" alt="figuras-geometricas">
+                    <h1>Taller JavaScript</h1>
+                </div>
+            </div>
+            <ul class="menu" id="menu">
+                <li class="activo"><a href="../">Inicio</a></li>
+                <li><a href="../figurasGeometricas/">Figuras</a></li>
+                <li><a href="../descuentos/">Descuentos</a></li>
+                <li><a href="../modaMediaMediana/">Moda/Mediana/Media</a></li>
                 <li><a href="">Salario</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-
+    <section class="contenedor">
+        <article class="contenedor--taller">
+            <p><a href="figurasGeometricas/">Calculadora de área y perímetro de 3 figuras geométricas</a></p>
+        </article>
+        <article class="contenedor--taller">
+            <p><a href="descuentos/">Calculadora de precios con descuentos</a></p>
+        </article>
+        <article class="contenedor--taller">
+            <p><a href="modaMediaMediana/">Calculadora de moda, media y mediana</a></p>
+        </article>
+        <article class="contenedor--taller">
+            <p><a href="">Calculadora de salarios</a></p>
+        </article>
     </section>
     <footer>
         <p>Desarrollado por <span>Miguel Ponce</span> 2021</p>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
