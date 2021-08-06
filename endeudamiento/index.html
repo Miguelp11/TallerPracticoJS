@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ponce">
+    <title>Capacidad de endeudamiento | Taller JS</title>
+    <link rel="shortcut icon" href="../img/favicon3.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilosGenerales.css">
+    <link rel="stylesheet" href="../css/endeudamiento.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="contenedor-menuLogo">
+                <div class="menuHamburguesa" id="menuHamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div>
+                    <img src="../img/sueldo.png" alt="figuras-geometricas">
+                    <h1>Endeudamiento</h1>
+                </div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="../">Inicio</a></li>
+                <li><a href="../figurasGeometricas/">Figuras</a></li>
+                <li><a href="../descuentos/">Descuentos</a></li>
+                <li><a href="../modaMediaMediana/">Moda/Mediana/Media</a></li>
+                <li  class="activo"><a href="../endeudamiento/">Endeudamiento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="contenedor">
+            <article>
+                <h3>¿Qué es la capacidad de endeudamiento?</h3>
+                <p>El capital máximo por el que una persona se puede endeudar sin poner en peligro su integridad financiera. Los expertos calculan que <strong>el límite de capacidad de endeudamiento es entre un 35% y 40% de los ingresos netos mensuales</strong>.</p><br>
+                <img src="../img/deudas.jpg" alt="deudas" class="imgDeudas">
+                <p>Una forma de conocer con exactitud nuestra capacidad de pago es <strong>saber cuáles son todos los ingresos y gastos fijos que tenemos cada mes</strong>.</p><br>
+                <p>Lo recomendable es <strong> no excederse del 40% de los ingresos netos mensuales</strong> en cubrir obligaciones financieras.</p><br>
+                <p class="cita">Información tomada del sitio web <cite><a href="https://www.bbva.com/es/mido-capacidad-endeudamiento/" target="_blank">bbva</a></cite>.</p>
+            </article>
+            <div class="linea"></div>
+            <article>
+                <h3>Calcular capacidad de endeudamiento</h3>
+                <form action="">
+                    <label for="mensual">Escribe tu Ingreso Mensual $"</label>
+                    <input id="mensual" type="number" placeholder="Ejemplo 12000">
+                    <label for="gastos">Escribe tus Gastos Fijos $</label>
+                    <input type="number" name="" id="gastos" placeholder="Ejemplo 4500">
+                    <label for="">Escoge el límite de capacidad de endeudamiento</label>
+                    <select name="" id="capacidad">
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                    </select>
+                    <button type="button" id="boton">Calcular</button>
+                </form>
+                <div class="resultados">
+                    <h3>Resultado</h3>
+                    <p>Tu capacidad de endeudamiento es:</p>
+                    <p class="resultado"></p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <p>Desarrollado por <span>Miguel Ponce</span> 2021</p>
+    </footer>
+    <script src="../js/endeudamiento.js"></script>
+</body>
+</html>
