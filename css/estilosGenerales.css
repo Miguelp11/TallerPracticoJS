@@ -57,7 +57,7 @@ nav ul li a{
     transition: all .4s linear;
 }
 .desplegar-menu{
-    max-height: 140px;
+    max-height: 150px;
 }
 .activo{
     background-color: #001E6C;

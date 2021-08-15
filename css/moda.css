@@ -11,6 +11,10 @@ section{
     text-align: center;
     padding: 10px;
 }
+.imgmedia{
+    margin-top: 20px;
+    width: 80%;
+}
 article h3{
     margin: 10px 0;
     font-size: 16px;
@@ -146,9 +150,9 @@ button:hover{
     article p{
         font-size: 16px;
     }
-    footer{
+    /* footer{
         position: fixed;
         bottom: 0;
         width: 100%;
-    }
+    } */
 }
